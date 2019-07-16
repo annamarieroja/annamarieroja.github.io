@@ -1,0 +1,1 @@
+../pyramid/template/base.mako

@@ -1,0 +1,65 @@
+/* Делаем кнопки внутри StackController со спец классом компактней */
+.ngwWebmapToolIdentify-controller .dijitToggleButton,
+.ngwWebmapToolIdentify-controller .dijitButton {
+    margin-left: -1px;
+    margin-right: 0;
+}
+
+.ngwWebmapToolIdentify-controller .dijitToggleButton:first-child,
+.ngwWebmapToolIdentify-controller .dijitButton:first-child {
+    margin-left: 0;
+}
+
+.ngwWebmapToolIdentify-controller .dijitToggleButton .dijitButtonNode,
+.ngwWebmapToolIdentify-controller .dijitButton .dijitButtonNode {
+    padding: 1px;
+    height: 20px;
+    border-radius: 0;
+}
+
+.ngwWebmapToolIdentify-controller .dijitToggleButton:first-child .dijitButtonNode,
+.ngwWebmapToolIdentify-controller .dijitButton:first-child .dijitButtonNode {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.ngwWebmapToolIdentify-controller .dijitToggleButton:last-child .dijitButtonNode,
+.ngwWebmapToolIdentify-controller .dijitButton:last-child .dijitButtonNode {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+
+.ngwWebmapToolIdentify-controller .dijitToggleButton .dijitButtonNode .dijitButtonText,
+.ngwWebmapToolIdentify-controller .dijitButton .dijitButtonNode .dijitButtonText {
+    padding: 1px 2px;
+}
+
+/* На кнопках без подписи прячем элемент подписи совсем */
+
+.dijitButton.no-label .dijitButtonText { display: none; }
+
+.ngwPopup__coordinates,
+.claro .ngwPopup__coordinates{
+    box-sizing: border-box;
+    width: 100% !important;
+    padding: 3px 3px 2px 2px;
+}
+
+.ngwPopup__coordinates-copy{
+    float: right;
+    margin-top: 3px;
+    line-height: 1;
+}
+
+.ngwPopup__coordinates-copy .copy-button__icon{
+    font-size: 16px;
+}
+
+.ngwPopup__coordinates .coordinate-switcher{
+    margin-left: -2px;
+}
+
+.ngwPopup__features{
+    border-bottom: 1px solid #efefef;
+}

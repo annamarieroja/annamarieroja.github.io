@@ -1,0 +1,22 @@
+<div data-dojo-type="${baseClass}" data-dojo-attach-point="focusNode" class="padding-block">
+    <div data-dojo-attach-point="wSourceFile"
+            data-dojo-type="ngw-file-upload/Uploader" data-dojo-attach-point="wFile" 
+            data-dojo-props="uploaderLinkText: '{{gettext 'Select a dataset'}}',
+                             uploaderHelpText: '{{gettext 'Dataset should be in ESRI Shapefile (zip) or GeoJSON format.'}}'
+    "></div>
+    <div data-dojo-type="dojox/layout/TableContainer" data-dojo-props="cols:1, labelWidth: 150">
+        <div data-dojo-attach-point="wSrs"
+            data-dojo-type="ngw-spatial-ref-sys/SRSSelect"
+            title="{{gettext 'Spatial reference system'}}" style="width: 100%"></div>
+
+        <select data-dojo-attach-point="wSourceEncoding"
+            data-dojo-type="dijit/form/Select"
+            title="{{gettext 'Encoding'}}" style="width: 100%">
+
+            <option value="utf-8">{{gettext 'UTF-8'}}</option>
+            <option value="windows-1251">{{gettext 'Windows-1251'}}</option>
+
+        </select>
+
+    </div>
+</div>
